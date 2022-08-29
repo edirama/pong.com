@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+    <style>
+        body {
+            text-align: center;
+            background-image: linear-gradient(red, rgb(48, 0, 0), black);
+            color: white;
+        }
+        #pjesa_kryesore {
+            width: 900px;
+            padding: 10px;
+            margin: auto;
+            text-align: center;
+            background-color: blue;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        canvas {
+            border: 1px solid yellow;
+        }
+        a { 
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            color: white;
+        }
+        a:active {
+            color: green;
+        }
+        #btn {
+            color: red;
+            background-color: black;
+            border-color: white;
+            border-radius: 50px;
+            margin-top: 50px;
+        }
+        #btn:hover {
+            color: white;
+            background-color: red;
+            border-color: black;
+            border-radius: 50px;
+        }
+        #btn:active {
+            color: black;
+            background-color: white;
+            border-color: red;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="pjesa_kryesore">
+    <h1>Pong game</h1>
+    <canvas id="pong" width="700" height="500"></canvas>
+
+    <form action="pong.html" method="post">
+      <button type="submit" id="btn"><h3>Restarto Faqen</h3></button>
+    </form>
+    
+    <footer>
+        <h2>Instagram: <a href="https://www.instagram.com/eduard_rama/" target="_blank">eduard_rama</a></h2>
+        <h2>Facebook: <a href="https://www.facebook.com/eduard.b.rama" target="_blank">Eduard Rama</a></h2>
+        <h2>Send E-mail: <a href="mailto:ramaeduard4@gmail.com" target="_blank">ramaeduard4@gmail.com</a></h2>
+        <h2>Copyright &copy; Eduard Rama 2020</h2>
+    </footer>
+    <script>
+        if (confirm("A deshiron te luash Pong?")) {
+            
+        } else {
+            if (confirm("A je i sigurt qe te anulosh lojen?")) {
+                console.log("Loja u anulua!");
+                window.stop();
+            }
+            else {
+                if(confirm("A deshiron te luash Pong?")){
+
+                }
+                else {
+                    console.log("Loja u anulua!");
+                    window.stop();
+                }
+            }
+        }
+    </script>
+    <script src="pong.js"></script>
+</div>
+</body>
+</html>
